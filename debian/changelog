@@ -1,3 +1,9 @@
+libyaml (0.1.4-2pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 22:33:40 +0000
+
 libyaml (0.1.4-2) unstable; urgency=low
 
   * Remove extra libyaml-0.so symlink from libyaml-dev.
