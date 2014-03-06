@@ -2,7 +2,8 @@ Source: libyaml
 Section: libs
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Anders Kaseorg <andersk@mit.edu>
+XSBC-Pexip-Original-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Anders Kaseorg <andersk@mit.edu>
 Build-Depends: autotools-dev,
  debhelper (>= 8.1.3~),
  cdbs (>= 0.4.93~)
