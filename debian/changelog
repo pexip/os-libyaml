@@ -1,3 +1,13 @@
+libyaml (0.1.4-2ubuntu0.12.04.3) precise-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service and possible code execution via
+    heap overflow in yaml_parser_scan_uri_escapes
+    - debian/patches/CVE-2014-2525.patch: properly handle memory in
+      src/scanner.c, src/yaml_private.h.
+    - CVE-2014-2525
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Apr 2014 11:44:25 -0400
+
 libyaml (0.1.4-2ubuntu0.12.04.2) precise-security; urgency=medium
 
   * SECURITY REGRESSION: parsing regression in security update
