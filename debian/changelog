@@ -1,39 +1,63 @@
-libyaml (0.1.4-2ubuntu0.12.04.4) precise-security; urgency=medium
+libyaml (0.1.6-3) unstable; urgency=high
 
-  * SECURITY UPDATE: denial of service via triggered assertion
-    - debian/patches/CVE-2014-9130.patch: remove assertion
-    - CVE-2014-9130
+  * debian/patches/CVE-2014-9130.patch: Fix CVE-2014-9130 assertion
+    failure caused by wrapped strings.  (Closes: #771366)
+  * Bump Standards-Version to 3.9.6 (no changes needed).
 
- -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 08 Jan 2015 18:17:27 -0800
+ -- Anders Kaseorg <andersk@mit.edu>  Fri, 28 Nov 2014 22:05:10 -0500
 
-libyaml (0.1.4-2ubuntu0.12.04.3) precise-security; urgency=medium
+libyaml (0.1.6-2) unstable; urgency=medium
 
-  * SECURITY UPDATE: denial of service and possible code execution via
-    heap overflow in yaml_parser_scan_uri_escapes
-    - debian/patches/CVE-2014-2525.patch: properly handle memory in
-      src/scanner.c, src/yaml_private.h.
-    - CVE-2014-2525
+  * Move doxygen from Build-Depends to Build-Depends-Indep.
 
- -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 02 Apr 2014 11:44:25 -0400
+ -- Anders Kaseorg <andersk@mit.edu>  Tue, 19 Aug 2014 21:56:25 -0400
 
-libyaml (0.1.4-2ubuntu0.12.04.2) precise-security; urgency=medium
+libyaml (0.1.6-1) unstable; urgency=medium
 
-  * SECURITY REGRESSION: parsing regression in security update
-    (LP: #1279805)
-    - debian/patches/CVE-2013-6393.patch: updated to use upstream commits
-      from 0.1.5.
+  * New upstream version 0.1.6.
+    + Fix CVE-2013-6393: heap-based buffer overflow when parsing YAML
+      tags.
+    + Fix CVE-2014-2525: heap-based buffer overflow in
+      yaml_parser_scan_uri_escapes.
+  * Drop upstreamed patches.
+  * Run tests at build time.
+  * Bump Standards-Version to 3.9.5 (no changes needed).
+  * Use dh-autoreconf.  (Closes: #745078)
+  * Use dh-buildinfo.
+  * Add libyaml-doc package for Doxygen-generated API documentation and
+    examples.  (Closes: #696821)
+  * Acknowledge NMUs.
 
- -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Thu, 13 Feb 2014 08:40:49 -0500
+ -- Anders Kaseorg <andersk@mit.edu>  Tue, 19 Aug 2014 00:03:53 -0400
 
-libyaml (0.1.4-2ubuntu0.12.04.1) precise-security; urgency=medium
+libyaml (0.1.4-3.2) unstable; urgency=high
 
-  * SECURITY UPDATE: denial of service and possible code execution via
-    large yaml documents
-    - debian/patches/CVE-2013-6393.patch: fix integer overflows in
-      src/scanner.c, src/api.c.
-    - CVE-2013-6393
+  * Non-maintainer upload by the Security Team.
+  * Add CVE-2014-2525.patch patch.
+    CVE-2014-2525: Fixes heap overflow in yaml_parser_scan_uri_escapes.
+    The heap overflow is caused by not properly expanding a string before
+    writing to it in function yaml_parser_scan_uri_escapes in scanner.c.
+    (Closes: #742732)
 
- -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 31 Jan 2014 13:09:02 -0500
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 27 Mar 2014 06:22:25 +0100
+
+libyaml (0.1.4-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Drop libyaml-indent-column-overflow-v2.patch patch.
+    This patch causes additional regressions on simple YAML files.
+  * Add libyaml-guard-against-overflows-in-indent-and-flow_level.patch patch.
+    Add upstream's patch to guard against overflows in indent and
+    flow_level. (Closes: #738587)
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Thu, 13 Feb 2014 07:51:58 +0100
+
+libyaml (0.1.4-3) unstable; urgency=high
+
+  * Fix CVE-2013-6393: heap-based buffer overflow when parsing YAML tags.
+    (Closes: #737076)
+
+ -- Anders Kaseorg <andersk@mit.edu>  Wed, 29 Jan 2014 20:11:48 -0500
 
 libyaml (0.1.4-2) unstable; urgency=low
 
