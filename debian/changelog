@@ -1,3 +1,17 @@
+libyaml (0.1.4-2ubuntu0.12.04.4pexip1) pexip; urgency=low
+
+  * New upstream release
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 13 Jan 2015 13:25:12 +0000
+
+libyaml (0.1.4-2ubuntu0.12.04.4) precise-security; urgency=medium
+
+  * SECURITY UPDATE: denial of service via triggered assertion
+    - debian/patches/CVE-2014-9130.patch: remove assertion
+    - CVE-2014-9130
+
+ -- Steve Beattie <sbeattie@ubuntu.com>  Thu, 08 Jan 2015 18:17:27 -0800
+
 libyaml (0.1.4-2ubuntu0.12.04.3pexip1) pexip; urgency=low
 
   * Update to latest upstream version
