@@ -1,3 +1,23 @@
+libyaml (0.1.7-2) unstable; urgency=medium
+
+  * Clean doxygen-generated documentation with dh_doxygen.
+  * Mark libyaml-doc Multi-Arch: foreign.
+  * Add libyaml-0-2.symbols file.
+
+ -- Anders Kaseorg <andersk@mit.edu>  Fri, 30 Sep 2016 22:06:09 -0400
+
+libyaml (0.1.7-1) unstable; urgency=medium
+
+  * New upstream version 0.1.7.
+    + Fix segfault in yaml_string_write_handler.
+    + Fix invalid simple key assertion.
+  * Drop upstreamed patches.
+  * Migrate packaging from CDBS to dh.
+  * Drop libyaml-0-2-dbg in favor of automatically generated
+    libyaml-0-2-dbgsym package.
+
+ -- Anders Kaseorg <andersk@mit.edu>  Sat, 03 Sep 2016 06:48:38 -0400
+
 libyaml (0.1.6-3) unstable; urgency=high
 
   * debian/patches/CVE-2014-9130.patch: Fix CVE-2014-9130 assertion

@@ -1,18 +1,15 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/autotools.mk
-include /usr/share/cdbs/1/rules/autoreconf.mk
+%:
+	dh $@ --with autoreconf
 
-CDBS_BUILD_DEPENDS += , cdbs (>= 0.4.93~)  # for $(DEB_HOST_MULTIARCH)
-
-# dh_buildinfo < 0.9+nmu1 fails at multiarch: http://bugs.debian.org/620104
-CDBS_BUILD_DEPENDS_rules_debhelper_buildinfo = dh-buildinfo (>= 0.9+nmu1~)
-
-build/libyaml-doc::
+override_dh_auto_build-indep:
 	$(MAKE) html
 
-DEB_CONFIGURE_EXTRA_FLAGS += --libdir=\$${prefix}/lib/$(DEB_HOST_MULTIARCH)
-DEB_MAKE_CHECK_TARGET = check
-DEB_DH_INSTALL_SOURCEDIR = $(DEB_DESTDIR)
-DEB_DBG_PACKAGE_libyaml-0-2 = libyaml-0-2-dbg
+override_dh_installdocs-indep:
+	dh_installdocs -i
+	dh_doxygen -plibyaml-doc
+
+override_dh_strip:
+	dh_strip -plibyaml-0-2 --dbgsym-migration='libyaml-0-2-dbg (<< 0.1.7-1~)'
+	dh_strip --remaining
