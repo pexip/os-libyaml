@@ -11,7 +11,7 @@ Standards-Version: 3.9.2
 Homepage: http://pyyaml.org/wiki/LibYAML
 Vcs-Git: git://andersk.mit.edu/libyaml.git
 Vcs-Browser: http://andersk.mit.edu/gitweb/libyaml.git
-XS-Pexip-Upstream: http://archive.ubuntu.com/ubuntu/ precise
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ jessie
 
 Package: libyaml-0-2
 Architecture: any
