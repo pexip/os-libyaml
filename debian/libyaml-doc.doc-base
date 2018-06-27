@@ -5,5 +5,5 @@ Abstract: Doxygen-generated API documentation for LibYAML.
 Section: Programming/C
 
 Format: HTML
-Index: /usr/share/doc/libyaml-doc/html/index.html
-Files: /usr/share/doc/libyaml-doc/html/*.html
+Index: /usr/share/doc/libyaml-dev/html/index.html
+Files: /usr/share/doc/libyaml-dev/html/*.html

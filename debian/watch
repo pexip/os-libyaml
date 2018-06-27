@@ -1,2 +1,3 @@
 version=3
-http://pyyaml.org/download/libyaml/yaml-(.*)\.tar\.gz
+opts="filenamemangle=s/.+\/dist-(\d\S*)\.tar\.gz/libyaml-$1\.tar\.gz/" \
+  https://github.com/yaml/libyaml/releases .*/dist-(\d\S*)\.tar\.gz
