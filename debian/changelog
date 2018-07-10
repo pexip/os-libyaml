@@ -1,3 +1,9 @@
+libyaml (0.1.7-2pexip1) pexip; urgency=medium
+
+  * Migrate to Stretch
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 10 Jul 2018 11:26:54 +0000
+
 libyaml (0.1.7-2) unstable; urgency=medium
 
   * Clean doxygen-generated documentation with dh_doxygen.
