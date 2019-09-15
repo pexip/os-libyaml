@@ -2,13 +2,13 @@ Source: libyaml
 Section: libs
 Priority: optional
 Maintainer: Anders Kaseorg <andersk@mit.edu>
-Build-Depends: debhelper (>= 11),
+Build-Depends: debhelper (>= 12),
  dh-buildinfo (>= 0.9+nmu1~)
 Build-Depends-Indep: doxygen (>= 1.8.4-1~)
-Standards-Version: 4.1.4
+Standards-Version: 4.4.0
 Homepage: https://github.com/yaml/libyaml
-Vcs-Git: git://andersk.mit.edu/libyaml.git
-Vcs-Browser: http://andersk.mit.edu/gitweb/libyaml.git
+Vcs-Git: https://salsa.debian.org/andersk-guest/libyaml.git
+Vcs-Browser: https://salsa.debian.org/andersk-guest/libyaml
 
 Package: libyaml-0-2
 Architecture: any
