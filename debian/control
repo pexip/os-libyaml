@@ -12,7 +12,7 @@ Standards-Version: 3.9.6
 Homepage: http://pyyaml.org/wiki/LibYAML
 Vcs-Git: git://andersk.mit.edu/libyaml.git
 Vcs-Browser: http://andersk.mit.edu/gitweb/libyaml.git
-XS-Pexip-Upstream: http://ftp.debian.org/debian/ stretch
+XS-Pexip-Upstream: http://ftp.debian.org/debian/ buster
 
 Package: libyaml-0-2
 Architecture: any
