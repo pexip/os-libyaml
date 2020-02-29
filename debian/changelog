@@ -1,3 +1,9 @@
+libyaml (0.2.1-1pexip1) pexip; urgency=medium
+
+  * Migrate to Buster
+
+ -- Vincent Sanders <vince@pexip.com>  Sat, 29 Feb 2020 16:12:41 +0000
+
 libyaml (0.2.1-1) unstable; urgency=medium
 
   * New upstream version 0.2.1.
