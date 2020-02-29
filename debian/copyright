@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: LibYAML
 Upstream-Contact: Kirill Simonov <xi@resolvent.net>
-Source: http://pyyaml.org/wiki/LibYAML
+Source: https://github.com/yaml/libyaml
 
 Files: *
 Copyright: 2006, Kirill Simonov <xi@resolvent.net>

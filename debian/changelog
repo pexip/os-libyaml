@@ -1,3 +1,13 @@
+libyaml (0.2.1-1) unstable; urgency=medium
+
+  * New upstream version 0.2.1.
+    + Moved canonical repo to GitHub.  (Closes: #865709)
+  * Bump Standards-Version to 4.1.4 and debian/compat to 11.
+    + Moved documentation in libyaml-doc from /usr/share/doc/libyaml-doc
+      to /usr/share/doc/libyaml-dev.
+
+ -- Anders Kaseorg <andersk@mit.edu>  Tue, 26 Jun 2018 20:25:08 -0400
+
 libyaml (0.1.7-2pexip1) pexip; urgency=medium
 
   * Migrate to Stretch
