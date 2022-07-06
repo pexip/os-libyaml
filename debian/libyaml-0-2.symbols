@@ -1,4 +1,5 @@
 libyaml-0.so.2 libyaml-0-2 #MINVER#
+* Build-Depends-Package: libyaml-dev
  yaml_alias_event_initialize@Base 0
  yaml_document_add_mapping@Base 0
  yaml_document_add_scalar@Base 0

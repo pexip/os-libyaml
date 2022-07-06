@@ -1,5 +1,7 @@
 #!/usr/bin/make -f
 
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
 %:
 	dh $@
 
@@ -9,7 +11,3 @@ override_dh_auto_build-indep:
 override_dh_installdocs-indep:
 	dh_installdocs -i
 	dh_doxygen -plibyaml-doc
-
-override_dh_strip:
-	dh_strip -plibyaml-0-2 --dbgsym-migration='libyaml-0-2-dbg (<< 0.1.7-1~)'
-	dh_strip --remaining

@@ -1,3 +1,35 @@
+libyaml (0.2.5-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit (from ./configure),
+    Repository, Repository-Browse.
+  * Drop transition for old debug package migration.
+  * Update standards version to 4.6.0, no changes needed.
+
+  [ Florian Ernst ]
+  * [de63dcd] debian/watch: update as per latest uscan recommendations.
+    This allows detecting new upstream releases again and also migrates
+    to the actual upstream source tarballs not containing any pre-built
+    stuff like documentation, saving a bunch of lintian errors/warnings.
+  * [1b08058] New upstream version 0.2.5 (Closes: #987895)
+  * [dfbe297] debian/copyright: update years according to most recent changes
+  * [183f9d4] upgrade to recommended debhelper-compat (= 13)
+    But ignore libtool library during installation and simplify debian/rules
+  * [982974f] debian/rules: enable hardening=+all
+  * [1f7cabe] debian/libyaml-0-2.symbols: add Build-Depends-Package
+    meta-information
+  * [1104826] debian/control: declare Rules-Requires-Root: no
+  * [8f2e2e6] debian/tests/: add upstream tests as autopkgtest
+  * [f5e5378] Add Salsa pipeline via debian/salsa-ci.yml file
+  * [88cfa12] salvaging the package and moving to Debian group on Salsa
+    (Closes: #1012344)
+  * [da1b78b] debian/control: Standards-Version: 4.6.1.0 (no further changes
+    required)
+
+ -- Florian Ernst <florian@debian.org>  Wed, 06 Jul 2022 16:45:09 +0200
+
 libyaml (0.2.2-1) unstable; urgency=medium
 
   * New upstream version 0.2.2.
