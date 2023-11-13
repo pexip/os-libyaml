@@ -1,3 +1,4 @@
-version=3
-opts="filenamemangle=s/.+\/dist-(\d\S*)\.tar\.gz/libyaml-$1\.tar\.gz/" \
-  https://github.com/yaml/libyaml/releases .*/dist-(\d\S*)\.tar\.gz
+version=4
+opts="filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%@PACKAGE@-$1.tar.gz%" \
+    https://github.com/yaml/@PACKAGE@/tags \
+    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz

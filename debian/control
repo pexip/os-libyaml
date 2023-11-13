@@ -2,14 +2,14 @@ Source: libyaml
 Section: libs
 Priority: optional
 Maintainer: Pexip AS <packaging@pexip.com>
-XSBC-Pexip-Original-Maintainer: Anders Kaseorg <andersk@mit.edu>
-Build-Depends: debhelper (>= 12),
- dh-buildinfo (>= 0.9+nmu1~)
+XSBC-Pexip-Original-Maintainer: Florian Ernst <florian@debian.org>
+Build-Depends: debhelper-compat (= 13), dh-buildinfo (>= 0.9+nmu1~)
 Build-Depends-Indep: doxygen (>= 1.8.4-1~)
-Standards-Version: 4.4.0
+Standards-Version: 4.6.1.0
+Rules-Requires-Root: no
 Homepage: https://github.com/yaml/libyaml
-Vcs-Git: https://salsa.debian.org/andersk-guest/libyaml.git
-Vcs-Browser: https://salsa.debian.org/andersk-guest/libyaml
+Vcs-Git: https://salsa.debian.org/debian/libyaml.git
+Vcs-Browser: https://salsa.debian.org/debian/libyaml
 XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: libyaml-0-2

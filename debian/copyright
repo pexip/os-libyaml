@@ -1,10 +1,10 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: LibYAML
 Upstream-Contact: Kirill Simonov <xi@resolvent.net>
 Source: https://github.com/yaml/libyaml
 
 Files: *
-Copyright: 2006, Kirill Simonov <xi@resolvent.net>
+Copyright: 2006-2020, Kirill Simonov <xi@resolvent.net>
 License: Expat
  Permission is hereby granted, free of charge, to any person obtaining
  a copy of this software and associated documentation files (the
@@ -27,7 +27,8 @@ License: Expat
  SOFTWARE.
 
 Files: debian/*
-Copyright: 2008, Anders Kaseorg <andersk@mit.edu>
+Copyright: 2008-2022, Anders Kaseorg <andersk@mit.edu>
+ 2022, Florian Ernst <florian@debian.org>
 License: permissive
  Copying and distribution of this package, with or without
  modification, are permitted in any medium without royalty
