@@ -1,3 +1,14 @@
+libyaml (0.2.5-2) unstable; urgency=medium
+
+  * [61a6bd0] d/clean: fully clean source tree after build (Closes: #1047251)
+  * [91e1921] d/control: drop B-D on unsatisfiable dh-buildinfo.
+    Thanks to наб <nabijaczleweli@nabijaczleweli.xyz> (Closes: #1090771)
+  * [07c8757] d/control: Standards-Version: 4.7.0 (no further changes
+    required)
+  * [875c7f3] d/copyright: adjust for current year
+
+ -- Florian Ernst <florian@debian.org>  Thu, 19 Dec 2024 18:01:23 +0100
+
 libyaml (0.2.5-1) unstable; urgency=medium
 
   [ Debian Janitor ]

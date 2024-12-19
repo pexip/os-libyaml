@@ -1,0 +1,16 @@
+aclocal.m4
+config/compile
+config/config.guess
+config/config.sub
+config/depcomp
+config/install-sh
+config/ltmain.sh
+config/missing
+config/test-driver
+configure
+doc/html/
+include/config.h.in
+include/Makefile.in
+Makefile.in
+src/Makefile.in
+tests/Makefile.in
