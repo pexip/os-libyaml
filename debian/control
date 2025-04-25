@@ -10,7 +10,7 @@ Rules-Requires-Root: no
 Homepage: https://github.com/yaml/libyaml
 Vcs-Git: https://salsa.debian.org/debian/libyaml.git
 Vcs-Browser: https://salsa.debian.org/debian/libyaml
-XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
+XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: libyaml-0-2
 Architecture: any
